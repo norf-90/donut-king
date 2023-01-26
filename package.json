@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://norf-90.github.io/donut-king",
   "scripts": {
-    "start": "parcel src/*.html",
+    "start": "parcel src/index.html",
     "build": "parcel build src/*.html --public-url /donut-king/"
   },
   "repository": {
