@@ -1,0 +1,97 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__container {
+}
+.header__logo {
+}
+.header__image {
+}
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  padding: 0 20px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color-mob-nav);
+
+  transition: transform var(--transition-params);
+}
+
+.nav--hidden {
+  @extend %visually-hidden;
+  transform: translateX(-100vw);
+}
+
+.nav__wrapper {
+  padding: 16px 0 0 0;
+  outline: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__close-btn {
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background-color: var(--background-color-mob-nav);
+}
+
+.nav__close-icon {
+  width: 32px;
+  height: 32px;
+  fill: black;
+  transition: fill var(--transition-params);
+
+  .nav__close-btn:hover &,
+  .nav__close-btn:focus & {
+    fill: var(--second-main-color);
+  }
+}
+
+.nav__list {
+  outline: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 46px 0;
+
+  font-family: var(--monserrat-alternates-ff);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: calc(34 / 28);
+
+  /* Основной текст */
+
+  color: #3c322d;
+}
+.nav__item {
+  outline: 2px solid dodgerblue;
+  width: 174px;
+  height: 34px;
+  text-align: center;
+
+  &:active {
+    background: linear-gradient(
+      180deg,
+      rgba(248, 110, 103, 0.63) 0%,
+      rgba(253, 86, 143, 0.86) 100%
+    );
+    box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+    color: #ffffff;
+  }
+}
+.nav__link {
+}
+.nav__button {
+}
+.nav__button--mobile {
+}

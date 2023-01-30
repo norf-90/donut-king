@@ -1,1 +1,14 @@
-@import './common';
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+// utils
+@import './utils/vars';
+@import './utils/placeholders';
+
+// base styles
+@import './base/container';
+@import './base/reset';
+
+//  layout styles
+@import './layouts/header';
+
+// component styles

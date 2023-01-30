@@ -1,16 +1,33 @@
 <header class="header">
-    <a class="header__loog" href="#">
-        <img class="header__image" src="#" alt="#">
-    </a>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#"> About us</a></li>
-            <li class="nav__item"><a class="nav__link" href="#"> Program</a>/li>
-            <li class="nav__item"><a class="nav__link" href="#"> Speakers</a></li>
-            <li class="nav__item"><a class="nav__link" href="#"> Price</a></li>
-            <li class="nav__item"><a class="nav__link" href="#"> Reviews</a></li>
-            <li class="nav__item"><a class="nav__link" href="#"> Contacts</a></li>
-        </ul>
-    </nav>
-    <button class="nav__button nav__button--mobile" type="button"></button>
+    <div class="header__container ">
+        <a class="header__logo" href="#">
+            <img class="header__image" srcset="./images/header/logo@1x.png 1x, ./images/header/logo@2x.png 2x"
+                src="./images/header/logo@1x.png" alt="Donut King logo">
+        </a>
+
+        <nav class="nav">
+            <div class="nav__wrapper">
+                <img class="header__image" srcset="./images/header/logo@1x.png 1x, ./images/header/logo@2x.png 2x"
+                    src="./images/header/logo@1x.png" alt="Donut King logo">
+                <button class="nav__close-btn nav__button--mobile js-close-menu" type="button">
+                    <svg class="nav__close-icon">
+                        <use href=" ./images/svg/symbol-defs.svg#icon-close-menu"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#"> About us</a></li>
+                <li class="nav__item"><a class="nav__link" href="#"> Program</a></li>
+                <li class="nav__item"><a class="nav__link" href="#"> Speakers</a></li>
+                <li class="nav__item"><a class="nav__link" href="#"> Price</a></li>
+                <li class="nav__item"><a class="nav__link" href="#"> Reviews</a></li>
+                <li class="nav__item"><a class="nav__link" href="#"> Contacts</a></li>
+            </ul>
+
+        </nav>
+        <button class="nav__button nav__button--mobile" type="button">
+            <svg src="../images/svg/symbol-defs.svg#icon-burger-menu"></svg>
+        </button>
+    </div>
 </header>
